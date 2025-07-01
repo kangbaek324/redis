@@ -14,7 +14,8 @@ import * as redisStore from 'cache-manager-redis-store';
         store: redisStore,
         host: 'localhost',
         port: 6379,
-        ttl: 60,
+        password: "1234",
+        ttl: 1000000
       }),
     }),
     TypeOrmModule.forFeature([Data]),
