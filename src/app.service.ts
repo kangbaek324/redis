@@ -36,7 +36,6 @@ export class AppService {
   async createItemR(data) {
     try {
       await this.cacheManager.set(data.name, data.value);
-      console.log(data.name, data.value);
     } catch(err) {
       console.error(err);
       throw new InternalServerErrorException();
